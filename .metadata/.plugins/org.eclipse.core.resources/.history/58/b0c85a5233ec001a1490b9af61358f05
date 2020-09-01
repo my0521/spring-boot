@@ -1,0 +1,9 @@
+package com.my.entity;
+
+
+public class User {
+
+	private String name;
+	private String pass;
+	
+}
