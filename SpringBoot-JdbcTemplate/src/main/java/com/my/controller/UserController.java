@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.my.entity.User;
 import com.my.service.UserService;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
 
 @RestController
 //@Api(value = "/",description = "UserController")

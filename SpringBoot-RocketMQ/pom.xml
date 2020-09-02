@@ -9,15 +9,14 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.my</groupId>
-	<artifactId>SpringBoot-JdbcTemplate</artifactId>
+	<artifactId>SpringBoot-RocketMQ</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SpringBoot-JdbcTemplate</name>
+	<name>SpringBoot-RocketMQ</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
 		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
-		<swagger.version>2.6.1</swagger.version>
 	</properties>
 
 	<dependencies>
@@ -25,47 +24,39 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<!--注意： 这里的版本,要和部署在服务器上的版本号一致-->
+		<!-- https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-client -->
+		<!-- <dependency>
+			<groupId>org.apache.rocketmq</groupId>
+			<artifactId>rocketmq-client</artifactId>
+			<version>4.7.1</version>
+		</dependency> -->
+		<!-- https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-spring-boot-starter -->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-jdbc</artifactId>
+		    <groupId>org.apache.rocketmq</groupId>
+		    <artifactId>rocketmq-spring-boot-starter</artifactId>
+		    <version>2.1.1</version>
 		</dependency>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>druid</artifactId>
-			<version>1.1.22</version>
-		</dependency>
-
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>1.2.17</version>
-		</dependency>
-
-		<!--lombok -->
+		
+		
+		<!-- lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
+			<optional>true</optional>
 		</dependency>
 		
 		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger2</artifactId>
-			<version>${swagger.version}</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/com.spring4all/swagger-spring-boot-starter -->
 		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger-ui</artifactId>
-			<version>${swagger.version}</version>
+			<groupId>com.spring4all</groupId>
+			<artifactId>swagger-spring-boot-starter</artifactId>
+			<version>1.9.1.RELEASE</version>
 		</dependency>
-		
-
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

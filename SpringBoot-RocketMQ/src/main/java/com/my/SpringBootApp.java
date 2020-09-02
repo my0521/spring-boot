@@ -3,10 +3,9 @@ package com.my;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
+import com.spring4all.swagger.EnableSwagger2Doc;
 
-
-@EnableSwagger2
+@EnableSwagger2Doc
 @SpringBootApplication
 public class SpringBootApp {
 

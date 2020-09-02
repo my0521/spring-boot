@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+rocketmq:
+  name-server: 121.36.64.197:9876
+  producer:
+    send-message-timeout: 300000
+    group: rocketmq-group
+    
+swagger:
+  title: 接口测试
+  version: 1.0
+  #swagger扫描的基础包，默认：全扫描
+  base-package: com.my.controller
+  #是否启用swagger，默认：true
+  enabled: true
+      # 显示请求头
+  ui-config.show-request-headers: true
