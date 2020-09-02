@@ -1,0 +1,40 @@
+swagger:
+  title: 接口测试
+  version: 1.0
+  #swagger扫描的基础包，默认：全扫描
+  base-package: com.my.controller
+  #是否启用swagger，默认：true
+  enabled: true
+      # 显示请求头
+  ui-config.show-request-headers: true
+      # 取消使用默认预定义的响应消息,并使用自定义响应消息
+      # 默认 200 OK  201 Created 401 Unauthorized 403 Forbidden 404 Not Found
+  apply-default-response-messages: false
+  global-response-message.post[0]:
+    code: 200
+    message: OK
+  global-response-message.post[1]:
+    code: 201
+    message: 保存成功
+  global-response-message.post[2]:
+    code: 400
+    message: 错误请求
+  global-response-message.post[3]:
+    code: 401
+    message: 令牌错误
+  global-response-message.post[4]:
+    code: 403
+    message: 禁止请求
+  global-response-message.post[5]:
+    code: 404
+    message: 未找到文件
+  global-response-message.post[6]:
+    code: 413
+    message: 请求的实体过大
+  global-response-message.post[7]:
+    code: 1000
+    message: 保存失败
+  global-response-message.post[8]:
+    code: 500
+    message: 未知错误
+  
