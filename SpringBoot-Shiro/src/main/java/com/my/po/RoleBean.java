@@ -5,7 +5,11 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class RoleBean implements Serializable {
-    private String id;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private String id;
     private String name;
     private Set<PermissionBean> permissions = new HashSet<>();
 

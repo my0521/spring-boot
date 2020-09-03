@@ -36,7 +36,7 @@ public class UserRealm extends AuthorizingRealm {
        
         UserBean user = (UserBean)subject.getPrincipal();
         System.out.println(user.toString());
-        if(user != null){
+        {
             SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
             // 角色与权限字符串集合
             Collection<String> rolesCollection = new HashSet<>();
@@ -54,7 +54,6 @@ public class UserRealm extends AuthorizingRealm {
             info.addRoles(rolesCollection);
             return info;
         }
-        return null;
     }
 
     /**

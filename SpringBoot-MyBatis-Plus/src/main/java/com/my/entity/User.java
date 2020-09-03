@@ -12,6 +12,10 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 @TableName("user")
 public class User extends Model<User> {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private	int	 id;
 	private	String	 name;
 	private	int	 age;

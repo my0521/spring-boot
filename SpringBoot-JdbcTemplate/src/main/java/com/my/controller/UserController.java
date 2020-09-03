@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.my.entity.User;
 import com.my.service.UserService;
-
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
+//
+//import io.swagger.annotations.Api;
+//import io.swagger.annotations.ApiOperation;
 
 
 @RestController
@@ -30,7 +30,7 @@ public class UserController {
 		User usr  = new User();
 		usr.setName(name);
 		usr.setAge(age);
-		int count = userService.addUser(usr);
+		userService.addUser(usr);
 		return usr.toString();
 	}
 	
