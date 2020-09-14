@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  application:
+    # 应用名称
+    name: springboot-file
+  servlet:
+    multipart:
+      # 启用
+      enabled: true
+      # 上传文件单个限制
+      max-file-size: 5MB
+      # 总限制
+      max-request-size: 6MB

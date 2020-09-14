@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: springboot_file
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: dell
+Implementation-Vendor-Id: com.my
+Build-Jdk: 1.8.0_231
+Implementation-URL: https://spring.io/projects/spring-boot/springboot_
+ file
+Created-By: Maven Integration for Eclipse
+
