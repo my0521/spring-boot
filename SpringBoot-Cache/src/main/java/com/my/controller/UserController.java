@@ -16,21 +16,22 @@ public class UserController {
 
 	//http://localhost:8080/addUser  {"id": "1","name":"name1"}
 	@RequestMapping("/addUser")
-	public String addUser(@RequestBody User user) {
-		userService.addUser(user);
-		return "OK";
+	public User addUser(@RequestBody User user) {
+		User user1 = userService.addUser(user);
+		return user1;
 	}
 
 	@RequestMapping("/updateUser")
-	String updateUser(@RequestParam("id") Integer id) {
-		userService.updateUser(id);
-		return "OK";
+	User updateUser(@RequestParam("id") Integer id) {
+		User user = userService.updateUser(id);
+		return user;
 	}
 
 	@RequestMapping("/selectUser")
-	String selectUser(@RequestParam("id") Integer id) {
-		userService.selectUser(id);
-		return "OK";
+	User selectUser(@RequestParam("id") Integer id) {
+		User user = userService.selectUser(id);
+		System.out.println(user.toString());
+		return user;
 	}
 
 	@RequestMapping("/deleteUser")
